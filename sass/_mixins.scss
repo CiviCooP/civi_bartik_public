@@ -1,0 +1,146 @@
+//
+//  Respond-to mixin
+// --------------------------------------------------
+@mixin respond-to($media) {
+  @media only screen and (min-width: $media) {@content;}
+}
+
+
+//
+//  Font sizes
+// --------------------------------------------------
+@mixin rem($size) {
+    font-size: $size;
+    font-size: calculateRem($size);
+}
+
+//
+//  Mixin for border radius
+//  Default is the radius set in the variables
+// --------------------------------------------------
+@mixin border-radius($lt:$radius, $rt:$radius, $rb:$radius, $lb:$radius) {
+  border-radius: $lt $rt $rb $lb;
+  -webkit-border-radius: $lt $rt $rb $lb;
+  -moz-border-radius: $lt $rt $rb $lb;
+  -ms-border-radius: $lt $rt $rb $lb;
+  -o-border-radius: $lt $rt $rb $lb;
+}
+
+//
+//  Mixin for placeholder
+//  Do something with the placeholder in the inputs
+// --------------------------------------------------
+@mixin placeholder($color: $font-default-color) {
+    &::-webkit-input-placeholder {color: $color}
+    &:-moz-placeholder           {color: $color}
+    &::-moz-placeholder          {color: $color}
+    &:-ms-input-placeholder      {color: $color}
+}
+
+//
+//  Mixin for transition
+// --------------------------------------------------
+@mixin transition($prop: all, $time: 0.2, $easing: ease){
+    -webkit-transition:$prop $time+s $easing;
+    -moz-transition:$prop $time+s $easing;
+    -o-transition:$prop $time+s $easing;
+    transition:$prop $time+s $easing;
+}
+
+//
+//  All transform elements
+//  First is generic, that is used by all the next
+// --------------------------------------------------
+@mixin transform($transforms) {
+    -moz-transform: $transforms;
+    -o-transform: $transforms;
+    -ms-transform: $transforms;
+    -webkit-transform: $transforms;
+    transform: $transforms;
+}
+
+@mixin rotate ($deg) {
+    @include transform(rotate(#{$deg}deg));
+}
+
+@mixin scale($scale) {
+    @include transform(scale($scale));
+}
+
+@mixin translate($x, $y) {
+    @include transform(translate($x, $y));
+}
+
+@mixin skew($x, $y) {
+    @include transform(skew(#{$x}deg, #{$y}deg));
+}
+
+// can change the position of a transformed element
+@mixin transform-origin ($origin) {
+    moz-transform-origin: $origin;
+    -o-transform-origin: $origin;
+    -ms-transform-origin: $origin;
+    -webkit-transform-origin: $origin;
+    transform-origin: $origin;
+}
+
+//
+//  Mixin for text shadow
+//  Default settings are nice for material/minimalistic design
+// --------------------------------------------------
+@mixin text-shadow($x: 2px, $y: 2px, $blur: 5px, $color: rgba(0,0,0,.4)) {
+    text-shadow: $x $y $blur $color;
+}
+
+//
+//  Mixin for boxshadow
+//  Default settings are nice for material/minimalistic design
+// --------------------------------------------------
+@mixin box-shadow($x: 0px, $y: 1px, $blur: 1px, $color: rgba(0,0,0,.08), $inset: "") {
+    @if ($inset != "") {
+        box-shadow: $inset $x $y $blur $color;
+    } @else {
+        box-shadow: $x $y $blur $color;
+    }
+}
+
+//
+//  Mixin for blur
+//  Usage unkown :) :) :)
+// --------------------------------------------------
+@mixin blur($radius) {
+    -webkit-filter: blur($radius+px); /* Chrome, Safari */
+    -ms-filter: blur($radius+px); /* IE12? */
+    filter: url("data:image/svg+xml;utf8,<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\"><filter id=\"blur\"><feGaussianBlur stdDeviation=\"#{$radius}\" /></filter></svg>#blur"); /* Firefox, Safari, Chrome*/
+    filter: progid:DXImageTransform.Microsoft.Blur(Strength=$radius); /* IE9 */
+}
+
+//
+//  Mixin for opacity
+//  Usage 1 trough 0, example: 0.5 = 50%
+// --------------------------------------------------
+@mixin opacity($trans) {
+    filter: alpha(opactiy=($trans * 100));
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$trans * 100})";
+    -moz-opacity: $trans;
+    -khtml-opacity: $trans;
+    opacity: $trans;
+}
+
+//
+//  Mixin for buttons
+//  Use background color from the color pallete in variables.
+//  Use contrast as last argument for dark font
+//  Created in helpers.scss
+// --------------------------------------------------
+@mixin button-variant($color: c(contrast), $bgcolor: c(info), $hover-bgcolor: darken(c(info), 5%), $contrast: "") {
+    @if ($contrast != "") {
+        color: c(darkshadow);
+    } @else {
+        color: $color;
+    }
+    background-color: $bgcolor;
+    &:hover {
+        background-color: $hover-bgcolor;
+    }
+}

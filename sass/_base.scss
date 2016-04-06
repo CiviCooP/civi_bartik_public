@@ -1,0 +1,134 @@
+html,body {
+    font-family: "Open Sans", Helvetica, Roboto, Arial, sans-serif;
+    color: $font-color;
+    font-size: 16px;
+    line-height: $line-height;
+    margin: 0;
+    padding: 0;
+}
+
+*, *:after {
+    box-sizing: border-box;
+}
+
+html,body,#page-wrapper {
+    min-width: 0;
+}
+
+#crm-container, .crm-container {
+    line-height: $line-height;
+    iframe {
+        width: 100%;
+        min-height: 200px;
+    }
+    a {
+        color: $third-color;
+        text-decoration: underline;
+    }
+    a.button {
+        padding: 6px 10px;
+        background: $primary-color;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 3px;
+        border: 0;
+        outline: 0;
+        text-decoration: none;
+        text-shadow: none;
+    }
+    span.crm-button {
+        @extend a.button;
+        input {
+            font-size: 14px;
+            text-transform: uppercase;
+            text-shadow: none;
+            color: #fff;
+        }
+    }
+    .crm-section {
+        .label {
+            text-align: left;
+            label {
+                font-weight: 700;
+            }
+        }
+    }
+    .register_link-section {
+        padding: 0;
+        margin: 15px 0;
+    }
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    @include respond-to($breakpoint-tablet) {
+        width: 768px;
+        padding: 0;
+    }
+    @include respond-to($breakpoint-desktop) {
+        width: 1024px;
+    }
+    @include respond-to($breakpoint-wide) {
+        width: 1200px;
+    }
+}
+
+.topbar {
+    background: #f1f1f1;
+    border-bottom: 1px solid #d9d9d9;
+    height: 37px;
+    margin-bottom: 37px;
+}
+
+.header {
+    text-align: center;
+    background: #fff !important;
+    padding-bottom: 20px;
+}
+
+.main-content {
+    border-top: 20px solid $primary-color;
+    padding: 0px 5px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    @include respond-to($breakpoint-desktop) {
+        width: 90%;
+    }
+    @include respond-to($breakpoint-wide) {
+        width: 80%;
+    }
+}
+
+h1.title {
+    color: $secondary-color;
+}
+
+.crm-container h3 {
+    background: $primary-color;
+    color: #fff;
+}
+
+.crm-container .help, .crm-container #help {
+    background: transparent;
+    border: 1px solid #f1f1f1;
+    h3 {
+        color: $font-color;
+    }
+    .label {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+.iCal_links-section {
+    margin-top: 50px;
+}
+
+#page-wrapper, #footer-wrapper {
+    background: #545454;
+}

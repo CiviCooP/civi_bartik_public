@@ -1,0 +1,8 @@
+name = Civi Bartik Public
+description = A wider, recolorable admin theme for CiviCRM based on Drupal Core's Bartik theme.
+package = Core
+core = 7.x
+version = 7.x-1.0
+base theme = civi_bartik
+
+stylesheets[all][]      = css/style.css
