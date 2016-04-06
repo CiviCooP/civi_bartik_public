@@ -85,12 +85,6 @@
       </div></div> <!-- /.section, /#messages -->
     <?php endif; ?>
 
-    <?php if ($page['featured']): ?>
-      <div id="featured"><div class="section clearfix">
-        <?php print render($page['featured']); ?>
-      </div></div> <!-- /.section, /#featured -->
-    <?php endif; ?>
-
   </div> <!-- /.wrapper -->
 
   <div id="main-wrapper" class="clearfix main-wrapper"><div id="main" class="clearfix">
@@ -104,7 +98,7 @@
       <?php endif; ?>
 
       <div class="main-content">
-        
+
         <div id="content" class="column"><div class="section">
           <?php if ($page['highlighted']): ?><div id="highlighted"><?php print render($page['highlighted']); ?></div><?php endif; ?>
           <a id="main-content"></a>
@@ -141,24 +135,7 @@
 
     </div></div> <!-- /#main, /#main-wrapper -->
 
-    <?php if ($page['triptych_first'] || $page['triptych_middle'] || $page['triptych_last']): ?>
-      <div id="triptych-wrapper"><div id="triptych" class="clearfix">
-        <?php print render($page['triptych_first']); ?>
-        <?php print render($page['triptych_middle']); ?>
-        <?php print render($page['triptych_last']); ?>
-      </div></div> <!-- /#triptych, /#triptych-wrapper -->
-    <?php endif; ?>
-
     <div id="footer-wrapper"><div class="section">
-
-      <?php if ($page['footer_firstcolumn'] || $page['footer_secondcolumn'] || $page['footer_thirdcolumn'] || $page['footer_fourthcolumn']): ?>
-        <div id="footer-columns" class="clearfix">
-          <?php print render($page['footer_firstcolumn']); ?>
-          <?php print render($page['footer_secondcolumn']); ?>
-          <?php print render($page['footer_thirdcolumn']); ?>
-          <?php print render($page['footer_fourthcolumn']); ?>
-        </div> <!-- /#footer-columns -->
-      <?php endif; ?>
 
       <?php if ($page['footer']): ?>
         <div id="footer" class="clearfix">
