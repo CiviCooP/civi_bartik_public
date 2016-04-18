@@ -1,0 +1,14 @@
+#crm-container a, .crm-container a {
+  color: $third-color;
+}
+
+.crm-container .status {
+  background-color: $status-background;
+  border: 1px solid $status-border;
+  color: $status-text;
+}
+
+.crm-container .crm-error, .crm-container .crm-inline-error {
+  background: $error-background;
+  color: $error-text;
+}

@@ -139,3 +139,18 @@ h1.title {
 #page-wrapper, #footer-wrapper {
   background: #545454;
 }
+
+#crm-container a, .crm-container a {
+  color: #de447a;
+}
+
+.crm-container .status {
+  background-color: #FFFFCC;
+  border: 1px solid #FFFF66;
+  color: #3e3e3e;
+}
+
+.crm-container .crm-error, .crm-container .crm-inline-error {
+  background: #FBE3E4;
+  color: #8A1F11;
+}
