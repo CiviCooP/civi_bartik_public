@@ -1,6 +1,6 @@
-html,body {
+html,body,table,td,tr {
     font-family: "Open Sans", Helvetica, Roboto, Arial, sans-serif;
-    color: $font-color;
+    color: $font-color !important;
     font-size: 16px;
     line-height: $line-height;
     margin: 0;
@@ -111,11 +111,21 @@ h1.title {
 .crm-container h3 {
     background: $primary-color;
     color: #fff;
+    padding: 0px;
+}
+
+.crm-container td.price_set_option-label {
+    padding: 0px;
+}
+
+.crm-container .form-layout-compressed td {
+    padding: 0 10px 0 0;
 }
 
 .crm-container .help, .crm-container #help {
     background: transparent;
     border: 1px solid #f1f1f1;
+    height: auto;
     h3 {
         color: $font-color;
     }
@@ -129,6 +139,27 @@ h1.title {
     margin-top: 50px;
 }
 
+.crm-container .crm-section {
+    .label{
+        float: left;
+        width: 24%;
+        text-align: right;
+        display: block;
+    }
+    .content {
+        margin-left: 24%;
+    }
+}
+
 #page-wrapper, #footer-wrapper {
     background: #545454;
+}
+
+div.crm-section.crm-socialnetwork.help {
+    iframe {
+        min-height: 0 !important;
+    }
+    .label {
+        width: 17%;
+    }
 }
