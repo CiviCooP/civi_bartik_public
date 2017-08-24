@@ -6,3 +6,7 @@ version = 7.x-1.0
 base theme = civi_bartik
 
 stylesheets[all][]      = css/style.css
+
+; https://www.codexworld.com/create-drupal-custom-theme-from-scratch/
+settings[font_family] = 'default'
+settings[font_size] = 'default'

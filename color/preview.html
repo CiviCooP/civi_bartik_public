@@ -1,0 +1,73 @@
+<div id="preview">
+    <div class="content">
+        <div class="section">
+            
+            <h1 class="title secondary-color" id="page-title">Civi Bartik Public</h1>
+        
+            <div id="crm-container" class="crm-container crm-public">
+
+                <div class="messages crm-error error-background error-text">
+                    <i class="crm-i fa-exclamation-triangle crm-i-red"></i>
+
+                    Please correct the following errors in the form fields below:     
+                    <ul id="errorList">
+                        <li>Organization Name is a required field.</li>
+                    </ul>
+
+                </div>
+
+                <div class="messages status no-popup crm-not-you-message status-background status-border status-text">
+                    Welcome. (<a href="/civicrm/" class="third-color">or a different person</a>?)
+                </div>
+
+                <fieldset>
+                    <legend>Organization Details</legend>
+                    
+                    <div class="messages help">Organization Details Help.</div>
+                    
+                    <div class="crm-section">
+                        <div class="label">
+                            <label for="onbehalf_organization_name">  
+                                <span class="crm-error crm-error-label error-background error-text">Organization Name</span>
+                            </label>
+                        </div>
+                        <div class="content">
+                            <span class="crm-frozen-field">
+                                &nbsp;<input name="onbehalf[organization_name]" type="hidden">
+                                <span class="crm-error error-background error-text">Organization Name is a required field.</span>
+                            </span>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    
+                    <div class="crm-section">
+                        <div class="content description">Street Adress (Primary) Description.</div>
+
+                        <div class="label text-color">
+                            <label>Street Address (Primary)</label>
+                        </div>
+
+                        <div class="content text-color">
+                            <input maxlength="96" size="45" name="onbehalf[street_address-Primary]" class="huge crm-form-text text-color" type="text">
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                        
+                </fieldset>
+
+                <div id="crm-submit-buttons" class="crm-submit-buttons">
+                    <span class="crm-button crm-button-type-upload base-color-background">
+                        <input class="validate form-submit default" value="Submit" type="submit">
+                    </span>
+                </div>
+
+                <div class="text-color">
+                    Some text <a href="" class="third-color">
+                        <div><span>and a link.</span></div>
+                    </a>  
+                </div>
+        
+            </div>
+        </div>
+    </div>
+</div>

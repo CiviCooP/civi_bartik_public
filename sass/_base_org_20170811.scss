@@ -1,0 +1,358 @@
+html,body,table,td,tr {
+    font-family: "Open Sans", Helvetica, Roboto, Arial, sans-serif;
+    color: $font-color !important;
+    font-size: 16px;
+    line-height: $line-height;
+    margin: 0;
+    padding: 0;
+}
+
+.font-family-open-sans {
+    font-family: "Open Sans", Helvetica, Roboto, Arial, sans-serif;
+}
+
+.font-family-verdana {
+        font-family: Verdana, Helvetica, Roboto, Arial, sans-serif;
+}
+
+.font-size-10 {
+    font-size: 10px;
+}
+
+.font-size-11 {
+    font-size: 11px;
+}
+.font-size-12 {
+    font-size: 12px;
+}
+.font-size-13 {
+    font-size: 13px;
+}
+.font-size-14 {
+    font-size: 14px;
+}
+.font-size-15 {
+    font-size: 15px;
+}
+.font-size-16 {
+    font-size: 16px;
+}
+.font-size-17 {
+    font-size: 17px;
+}
+.font-size-18 {
+    font-size: 18px;
+}
+.font-size-19 {
+    font-size: 19px;
+}
+.font-size-20 {
+    font-size: 20px;
+}
+.font-size-21 {
+    font-size: 21px;
+}
+.font-size-22 {
+    font-size: 22px;
+}
+.font-size-23 {
+    font-size: 23px;
+}
+.font-size-24 {
+    font-size: 24px;
+}
+
+*, *:after {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#page-wrapper {
+    min-width: 0;
+}
+
+#skip-link, 
+#page-wrapper, 
+#sidebar-first, 
+#sidebar-second, 
+#content, 
+.one-sidebar #content, 
+#footer {
+    width: 100%;
+    min-width: auto;
+}
+
+.topbar {
+    background: #f1f1f1;
+    border-bottom: 1px solid #d9d9d9;
+    height: 37px;
+    margin-bottom: 37px;
+}
+
+.header {
+    text-align: center;
+    background: #fff !important;
+    padding-bottom: 20px;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    @include respond-to($breakpoint-tablet) {
+        width: 768px;
+        padding: 0;
+    }
+    @include respond-to($breakpoint-desktop) {
+        width: 1024px;
+    }
+    @include respond-to($breakpoint-wide) {
+        width: 1200px;
+    }
+}
+
+#crm-container, 
+.crm-container {
+    line-height: $line-height;
+    
+    iframe {
+        width: 100%;
+        min-height: 200px;
+    }
+    
+    a {
+        color: $third-color;
+        text-decoration: underline;
+    }
+    
+    a.button {
+        padding: 6px 10px;
+        background: $primary-color;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 3px;
+        border: 0;
+        outline: 0;
+        text-decoration: none;
+        text-shadow: none;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    h3 {
+        background: $primary-color;
+        color: #fff;
+        padding: 0px;
+    }
+    
+    span.crm-button {
+        @extend a.button;
+        input {
+            font-size: 14px !important; // inportant is overwrite civicrm.css
+            text-transform: uppercase;
+            text-shadow: none;
+            color: #fff;
+        }
+    }
+    .crm-section {
+        .label {
+            text-align: left;
+            label {
+                font-weight: 700;
+            }
+        }
+    }
+    .register_link-section {
+        padding: 0;
+        margin: 15px 0;
+    }
+}
+
+.main-content {
+    border-top: 20px solid $primary-color;
+    padding: 0px 5px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    
+    @include respond-to($breakpoint-desktop) {
+        width: 90%;
+    }
+    @include respond-to($breakpoint-wide) {
+        width: 80%;
+    }
+}
+
+#content {    
+    
+    
+    // Civicrm event
+    .crm-event-info-form-block {
+
+        // Civicrm event all
+        .event-info {
+            .label {
+                width: auto;
+            }
+
+            .content {
+                float: left;
+                margin-left: 15px;
+            }
+        }
+
+        // Civicrm event overwrite
+        .event_map-section {
+            .content {
+                width: 100%;
+                margin-left: 0;
+            }
+
+            #google_map {
+                max-width: 100%;
+            }
+        }
+
+        // Civicrm event action
+        .action-link {
+            padding: 0;
+        }
+    }
+
+    // Civicrm contribution
+    .crm-contribution-main-form-block {
+
+        // Civicrm contribution price
+        #priceset {
+            .label {
+                float: none;
+                text-align: left;
+                
+                @include respond-to($breakpoint-tablet) {
+                    float: left;
+                    text-align: right;
+                }
+            }
+
+            .content {
+                margin-left: 0;
+
+                @include respond-to($breakpoint-tablet) {
+                    margin-left: 19%;
+                }
+            }
+
+            // Civicrm contribution price overwrite fot total
+            .section-pricesetTotal {
+                .label {
+                    float: left;
+                    width: auto;
+
+                    @include respond-to($breakpoint-tablet) {
+                        width: 17%;
+                    }
+                }
+
+                .content {
+                    float: left;
+                    margin-left: 15px;
+
+                    @include respond-to($breakpoint-tablet) {
+                        float: none;
+                        margin-left: 19%;
+                    }
+                }
+            }
+        }
+
+        // Civicrm contrubtion e-mail
+        .email-5-section {
+            .label {
+                float: none;
+                width: auto;
+
+                text-align: left;
+
+                @include respond-to($breakpoint-tablet) {
+                    float: left;
+                    width: 17%;
+
+                    text-align: right;
+                }
+            }
+            .content {
+                margin-left: 0;
+
+                @include respond-to($breakpoint-tablet) {
+                    margin-left: 19%;
+                }
+            }
+        }
+    }
+}
+
+h1.title {
+    color: $secondary-color;
+}
+
+.crm-container 
+
+.crm-container .crm-submit-buttons {
+    height: 50px;
+}
+
+.crm-container td.price_set_option-label {
+    padding: 0px;
+}
+
+.crm-container .form-layout-compressed td {
+    padding: 0 10px 0 0;
+}
+
+.crm-container .help, .crm-container #help {
+    background: transparent;
+    border: 1px solid #f1f1f1;
+    height: auto;
+    h3 {
+        color: $font-color;
+    }
+    .label {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+.iCal_links-section {
+    margin-top: 50px;
+}
+
+.crm-container .crm-section {
+    .label{
+        float: left;
+        width: 24%;
+        text-align: right;
+        display: block;
+    }
+    .content {
+        margin-left: 24%;
+    }
+}
+
+#page-wrapper, #footer-wrapper {
+    background: #545454;
+}
+
+div.crm-section.crm-socialnetwork.help {
+    iframe {
+        min-height: 0 !important;
+    }
+    .label {
+        width: 17%;
+    }
+}

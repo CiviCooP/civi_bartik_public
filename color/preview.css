@@ -1,0 +1,145 @@
+.color-form {
+    max-width: 75em !important;  
+}
+
+#preview {    
+    width: 100%;
+}
+
+#preview h1.title {
+    color: #00969b;
+    background: #fff;
+}
+
+#preview .crm-container fieldset {
+    
+    padding: 4px 0px;
+    margin: 10px 0px;
+    
+    border: none;
+    border-top: 1px solid #CFCEC3;
+    
+    background: none;
+}
+
+#preview .crm-container fieldset legend {
+    position: relative;
+    display: block;
+    width: auto;
+    
+    /*font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;*/
+    
+    padding: 4px;    
+    
+    border: medium none;
+    
+    background: none;
+    background-color: transparent;
+    
+    color: #3E3E3E;
+    
+    text-indent: 0px;
+}
+
+#preview .crm-container .label {
+    width: 17%;
+    text-align: right;
+}
+
+#preview .crm-container .content {
+    float: left;
+    width: auto;
+    
+    margin-left: 4%;
+    padding-top: 6px;
+    
+    font-size: 15px;
+}
+
+#preview .crm-container .content input {
+    max-width: 100%;
+    height: 1.8em;
+    padding: 5px;
+    
+    font-size: 15px;
+    
+    border: 1px solid #999;
+    border-radius: 3px;
+    vertical-align: middle;
+}
+
+#preview .crm-container .content.description {
+    float: left;
+    width: auto;
+    
+    padding: 0;
+    padding-top: 6px;
+    margin: 0;
+    margin-left: 4%;
+    
+    color: #696969;
+    line-height: inherit;
+    font-size: 15px;
+    font-weight: normal;
+    white-space: normal;
+}
+
+#preview .crm-container .clear {
+    clear: both;
+}
+
+#preview .crm-container .crm-error, 
+#preview .crm-container .crm-inline-error {
+    margin: 1em 0 1em;
+    
+    background: #FBE3E4;
+    
+    color: #8A1F11;
+    font-size: 16px;
+    line-height: 1.5;
+    
+    border: none;
+}
+
+#preview .crm-container .help {
+    padding: 4px;
+    margin: 0 0 8px;
+    
+    background: none;
+    background-color: #F1F8EB;
+    border: 1px solid #B0D730;
+    
+    color: #3E3E3E;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+#preview .crm-container.crm-public .crm-submit-buttons {
+    height: 50px;
+}
+
+#preview .crm-container span.crm-button {
+    float: left;
+    padding: 6px 10px;
+    
+    background: #6fb346;
+    border-radius: 3px;
+    
+    cursor: pointer;
+    
+}
+
+#preview .crm-container.crm-public #crm-submit-buttons input {
+    padding: 3px 10px;
+    margin: 0px;
+    
+    background: none;
+    border: none;
+    
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+}
