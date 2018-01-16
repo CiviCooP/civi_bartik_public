@@ -263,12 +263,6 @@ body,
             margin-left: 0;
             
             @include respond-to($breakpoint-tablet) {
-                float: none;
-                width: auto;
-                margin-left: 4%;
-            }
-            
-            @include respond-to($breakpoint-desktop) {
                 float: left;
                 width: auto;
                 margin-left: 1%;
@@ -369,6 +363,10 @@ body,
                 margin-left: 0;
                 
                 @include respond-to($breakpoint-tablet) {
+                    margin-left: 25%;
+                }
+                
+                @include respond-to($breakpoint-desktop) {
                     margin-left: 18%;
                 }
             }

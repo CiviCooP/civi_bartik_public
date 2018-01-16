@@ -288,14 +288,6 @@ body,
 @media only screen and (min-width: 768px) {
   #crm-container .crm-section .content,
   .crm-container .crm-section .content {
-    float: none;
-    width: auto;
-    margin-left: 4%;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  #crm-container .crm-section .content,
-  .crm-container .crm-section .content {
     float: left;
     width: auto;
     margin-left: 1%;
@@ -384,6 +376,12 @@ body,
   margin-left: 0;
 }
 @media only screen and (min-width: 768px) {
+  #crm-container .crm-event-info-form-block .event_map-section .content,
+  .crm-container .crm-event-info-form-block .event_map-section .content {
+    margin-left: 25%;
+  }
+}
+@media only screen and (min-width: 1024px) {
   #crm-container .crm-event-info-form-block .event_map-section .content,
   .crm-container .crm-event-info-form-block .event_map-section .content {
     margin-left: 18%;
