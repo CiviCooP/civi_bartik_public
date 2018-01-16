@@ -1,5 +1,10 @@
 input[type="text"], input[type="password"], textarea {
     max-width: 100%;
+    width: 100%;
+    
+    @include respond-to($breakpoint-tablet) {
+        width: auto;
+    }
 }
 
 input[type="submit"] {
