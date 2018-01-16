@@ -224,6 +224,13 @@ body,
 #crm-container td.price_set_option-label,
 .crm-container td.price_set_option-label {
   padding: 0px;
+  width: 70%;
+}
+@media only screen and (min-width: 768px) {
+  #crm-container td.price_set_option-label,
+  .crm-container td.price_set_option-label {
+    width: auto;
+  }
 }
 #crm-container .form-layout-compressed td,
 .crm-container .form-layout-compressed td {
@@ -374,7 +381,13 @@ body,
 #crm-container .crm-event-info-form-block .event_map-section .content,
 .crm-container .crm-event-info-form-block .event_map-section .content {
   width: 100%;
-  margin-left: 18%;
+  margin-left: 0;
+}
+@media only screen and (min-width: 768px) {
+  #crm-container .crm-event-info-form-block .event_map-section .content,
+  .crm-container .crm-event-info-form-block .event_map-section .content {
+    margin-left: 18%;
+  }
 }
 #crm-container .crm-event-info-form-block .event_map-section #google_map,
 .crm-container .crm-event-info-form-block .event_map-section #google_map {

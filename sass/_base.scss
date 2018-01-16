@@ -206,6 +206,11 @@ body,
     
     td.price_set_option-label {
         padding: 0px;
+        width: 70%;
+        
+        @include respond-to($breakpoint-tablet) {
+            width: auto;
+        }
     }
     
     .form-layout-compressed td {
@@ -361,7 +366,11 @@ body,
         .event_map-section {
             .content {
                 width: 100%;
-                margin-left: 18%;
+                margin-left: 0;
+                
+                @include respond-to($breakpoint-tablet) {
+                    margin-left: 18%;
+                }
             }
 
             #google_map {
