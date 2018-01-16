@@ -454,10 +454,10 @@ body,
 
 input[type="text"], input[type="password"], textarea {
   max-width: 100%;
-  width: 100%;
+  width: 100% !important;
 }
 @media only screen and (min-width: 768px) {
   input[type="text"], input[type="password"], textarea {
-    width: auto;
+    width: auto !important;
   }
 }
