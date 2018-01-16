@@ -208,7 +208,7 @@ body,
         padding: 0px;
         width: 70%;
         
-        @include respond-to($breakpoint-tablet) {
+        @include respond-to($breakpoint-desktop) {
             width: auto;
         }
     }

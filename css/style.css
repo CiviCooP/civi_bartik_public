@@ -226,7 +226,7 @@ body,
   padding: 0px;
   width: 70%;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   #crm-container td.price_set_option-label,
   .crm-container td.price_set_option-label {
     width: auto;
