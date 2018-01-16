@@ -247,7 +247,7 @@ body,
 }
 #crm-container .crm-section fieldset,
 .crm-container .crm-section fieldset {
-  display: table;
+  display: table-row;
   width: 100%;
   max-width: 100%;
 }
