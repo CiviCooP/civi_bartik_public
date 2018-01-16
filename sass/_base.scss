@@ -232,16 +232,6 @@ body,
             }
         }
         
-        /*.label,
-        .content {
-            float: left;
-            text-align: left;
-            
-            @include respond-to($breakpoint-tablet) {
-                text-align: right;
-            }
-        }*/
-        
         .label {
             float: left;
             width: 100%;
@@ -271,6 +261,22 @@ body,
                 float: none;
                 width: auto;
                 margin-left: 4%;
+            }
+            
+            @include respond-to($breakpoint-desktop) {
+                float: left;
+                width: auto;
+                margin-left: 1%;
+            }
+            
+            .select2-container {
+                a {
+                    height: 2.8em;
+                    
+                    .select2-search-choice-close {
+                        top: 13px;
+                    }
+                }
             }
             
             .crm-error {
@@ -355,7 +361,7 @@ body,
         .event_map-section {
             .content {
                 width: 100%;
-                margin-left: 0;
+                margin-left: 18%;
             }
 
             #google_map {

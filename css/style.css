@@ -233,18 +233,6 @@ body,
 .crm-container .iCal_links-section {
   margin-top: 50px;
 }
-#crm-container .crm-section,
-.crm-container .crm-section {
-  /*.label,
-  .content {
-      float: left;
-      text-align: left;
-      
-      @include respond-to($breakpoint-tablet) {
-          text-align: right;
-      }
-  }*/
-}
 #crm-container .crm-section fieldset,
 .crm-container .crm-section fieldset {
   display: table-row;
@@ -297,6 +285,22 @@ body,
     width: auto;
     margin-left: 4%;
   }
+}
+@media only screen and (min-width: 1024px) {
+  #crm-container .crm-section .content,
+  .crm-container .crm-section .content {
+    float: left;
+    width: auto;
+    margin-left: 1%;
+  }
+}
+#crm-container .crm-section .content .select2-container a,
+.crm-container .crm-section .content .select2-container a {
+  height: 2.8em;
+}
+#crm-container .crm-section .content .select2-container a .select2-search-choice-close,
+.crm-container .crm-section .content .select2-container a .select2-search-choice-close {
+  top: 13px;
 }
 #crm-container .crm-section .content .crm-error,
 .crm-container .crm-section .content .crm-error {
@@ -370,7 +374,7 @@ body,
 #crm-container .crm-event-info-form-block .event_map-section .content,
 .crm-container .crm-event-info-form-block .event_map-section .content {
   width: 100%;
-  margin-left: 0;
+  margin-left: 18%;
 }
 #crm-container .crm-event-info-form-block .event_map-section #google_map,
 .crm-container .crm-event-info-form-block .event_map-section #google_map {
