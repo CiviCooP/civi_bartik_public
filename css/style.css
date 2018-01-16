@@ -244,11 +244,13 @@ body,
 .crm-container .crm-section {
   display: table;
   width: 100%;
+  max-width: 100%;
 }
 #crm-container .crm-section fieldset,
 .crm-container .crm-section fieldset {
   display: table-row;
   width: 100%;
+  max-width: 100%;
 }
 #crm-container .crm-section fieldset legend,
 .crm-container .crm-section fieldset legend {
