@@ -240,16 +240,9 @@ body,
 .crm-container .iCal_links-section {
   margin-top: 50px;
 }
-#crm-container .crm-section,
-.crm-container .crm-section {
-  width: 100%;
-  max-width: 100%;
-}
 #crm-container .crm-section fieldset,
 .crm-container .crm-section fieldset {
-  display: table-row;
   width: 100%;
-  max-width: 100%;
 }
 #crm-container .crm-section fieldset legend,
 .crm-container .crm-section fieldset legend {
